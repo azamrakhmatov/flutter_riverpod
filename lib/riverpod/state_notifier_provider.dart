@@ -11,7 +11,7 @@ class ShoppingListNotifier extends StateNotifier<List<ShoppingItemModel>> {
   ShoppingListNotifier()
       : super([
           ShoppingItemModel(
-            name: "banana",
+            name: "kimchi",
             quantity: 10,
             hasBought: false,
             isSpicy: true,
@@ -23,7 +23,7 @@ class ShoppingListNotifier extends StateNotifier<List<ShoppingItemModel>> {
             isSpicy: false,
           ),
           ShoppingItemModel(
-            name: "orange",
+            name: "ramen",
             quantity: 8,
             hasBought: false,
             isSpicy: true,

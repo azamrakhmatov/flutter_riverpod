@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:getx_app/layout/default_layout.dart';
 import 'package:getx_app/screen/auto_dispose_modifier_screen.dart';
 import 'package:getx_app/screen/family_modify_screen.dart';
 import 'package:getx_app/screen/future_provider_screen.dart';
+import 'package:getx_app/screen/provider_screen.dart';
 import 'package:getx_app/screen/state_notifier_provider_screen.dart';
 import 'package:getx_app/screen/state_provider_screen.dart';
 import 'package:getx_app/screen/stream_provider_screen.dart';
@@ -73,6 +75,16 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text("Auto Dispose Modifier Screen"),
+          ),
+           ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => ProviderScreen(),
+                ),
+              );
+            },
+            child: Text("Provider Screen"),
           ),
         ],
       ),
